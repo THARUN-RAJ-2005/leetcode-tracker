@@ -1,0 +1,25 @@
+{
+  "functions": {
+    "pages/api/sync/stream.ts": {
+      "maxDuration": 60
+    },
+    "pages/api/sync.ts": {
+      "maxDuration": 10
+    },
+    "pages/api/leaderboard.ts": {
+      "maxDuration": 10
+    },
+    "pages/api/history.ts": {
+      "maxDuration": 15
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/sync/stream",
+      "headers": [
+        { "key": "X-Accel-Buffering", "value": "no" },
+        { "key": "Cache-Control", "value": "no-cache, no-transform" }
+      ]
+    }
+  ]
+}
